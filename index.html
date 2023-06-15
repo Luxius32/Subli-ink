@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subli Ink</title>
+    <link rel="stylesheet" href="Assets/Styles.css">
+    <link rel="shorcut icon" href="/Assets/Iconos/Taza.png">
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <img src="/Assets/Iconos/Logo2.png" alt="logo" class="logo"> <!-- Enviar a -->
+        <div class="envio">
+            <img src="/Assets/Iconos/Ubicacion.png" alt="">
+            <a href="#portada">Enviar a Calle Falsa 123</a>
+        </div>
+
+        <!-- Navbar y barra de busqueda -->
+        <nav class="navbar">
+
+            <!-- menu hamburguesa -->
+            <label for="menu-toggle" class="menu-label">
+                <img src="/Assets/Iconos/menu.png" alt="menu" class="menu-icon">
+            </label>
+            <input type="checkbox" id="menu-toggle" class="menu-label">
+            <div class="header-mid">
+
+                <!-- Barra de busqueda -->
+                <label for="barra-busqueda" class="search"></label>
+                <input type="text" id="barra-busqueda" class="barra-busqueda" placeholder="Busca tu diseño">
+
+                <!-- navbar list -->
+                <ul class="navbar-list">
+                    <li><a href="#portada">Home</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Sumate</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Login y carrito -->
+            <div class="zona-derecha">
+                <!-- Ingreso a la pagina -->
+                <div class="account">
+                    <!-- <a href="#">Mis compras</a> -->
+                    <div class="login">
+                        <a href="#portada">Crea tu cuenta</a>
+                        <p>|</p>
+                        <a href="#">Inicia sesión</a>
+                    </div>
+                </div>
+
+                <!-- Carrito -->
+                <img src="/Assets/Iconos/carrito.png" alt="cart-icon" class="cart-icon">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="portada">
+            <div class="portada-content">
+                <div class="slider-frame">
+                    <ul>
+
+                        <!-- Slider1 -->
+                        <li class="slider1">
+                            <img class="slider-img" src="/Assets/Slider/Slider 1.png" alt="imagen1">
+                            <img src="/Assets/Iconos/Slogan.png" alt="slogan" class="slogan">
+                        </li>
+
+                        <!-- Slider 2 -->
+                        <li class="slider2">
+                            <img class="slider-img" src="/Assets/Slider/Slider 2.png" alt="imagen2">
+                            <div class="slider2-info">
+                                <span class="slider-text">Lo más vendido del mes</span>
+                                <button class="slider-button">Ver productos</button>
+                            </div>
+                        </li>
+
+                        <!-- Slider 3 -->
+                        <li class="slider3">
+                            <img class="slider-img" src="/Assets/Slider/Slider 3.png" alt="imagen3">
+                            <div class="slider3-info">
+                                <span class="slider-text">Vende nuestros productos</span>
+                                <button class="slider-button">Contáctanos</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="cards">
+            <!-- Cards Conteiner -->
+            <div class="cards-conteiner">
+
+                <h2>Nuestros Productos</h2>
+
+                <!-- Contenedor 1 -->
+                <div class="cards-subconteiner">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <img src="/Assets/Productos/taza ceramica.png" alt="taza ceramica" class="card-img">
+                        <span>Taza cerámica</span>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <img src="Assets/Productos/Jarro.png" alt="vaso termico" class="card-img">
+                        <span>Vaso térmico</span>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <img src="/Assets/Productos/Chopp.png" alt="chopp" class="card-img">
+                        <span>Chopp polímero</span>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <img src="/Assets/Productos/Mate polimero.png" alt="mate polimero" class="card-img">
+                        <span>Mate polímero</span>
+                    </div>
+                </div>
+
+                <!-- Contenedor 2 -->
+                <div class="cards-subconteiner">
+
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <img src="/Assets/Productos/Taza magica.png" alt="taza mágica" class="card-img">
+                        <span>Taza mágica</span>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <img src="/Assets/Productos/Mate ceramica.png" alt="mate ceramica" class="card-img">
+                        <span>Mate cerámica</span>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <img src="/Assets/Productos/hoppy.png" alt="botella hoppy" class="card-img">
+                        <span>Botella hoppy</span>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <img src="/Assets/Productos/Taza polimero.png" alt="taza polimero" class="card-img">
+                        <span>Taza polímero</span>
+                    </div>
+                </div>
+
+                <!-- Contenedor 3 -->
+                <div class="cards-subconteiner">
+
+                    <h2>Lo más vendido</h2>
+
+                    <!-- Card 1 -->
+                    <div class="card-popular">
+                        <img src="/Assets/Productos mas vendidos/Taza1.png" alt="taza ceramica">
+                        <h3>Taza Mario Bros psicodélica</h3>
+                        <span>$1500</span>
+                        <p>Hasta 3 cuotas sin interes</p>
+                        <button>Agregar al carrito <img src="/Assets/Iconos/carrito2.png" alt="cart-icon"></button>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="card-popular">
+                        <img src="/Assets/Productos mas vendidos/Botella.png" alt="botella hoppy">
+                        <h3>Botella hoppy doble pico Pokemón</h3>
+                        <span>$2200</span>
+                        <p>Hasta 3 cuotas sin interes</p>
+                        <button>Agregar al carrito <img src="/Assets/Iconos/carrito2.png" alt="cart-icon"></button>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card-popular">
+                        <img src="/Assets/Productos mas vendidos/Mate.png" alt="mate ceramica">
+                        <h3>Mate Grey´s Anatomy</h3>
+                        <span>$1500</span>
+                        <p>Hasta 3 cuotas sin interes</p>
+                        <button>Agregar al carrito <img src="/Assets/Iconos/carrito2.png" alt="cart-icon"></button>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card-popular">
+                        <img src="/Assets/Productos mas vendidos/Taza2.png" alt="taza ceramica">
+                        <h3>Taza dia del padre Star Wars</h3>
+                        <span>$1500</span>
+                        <p>Hasta 3 cuotas sin interes</p>
+                        <button>Agregar al carrito <img src="/Assets/Iconos/carrito2.png" alt="cart-icon"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros">
+            <div class="info-conteiner">
+                <h2></h2>
+                <div class="info-item">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="info-item">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="info-item">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div class="info-item">
+                    <h3></h3>
+                    <p></p>
+                    <div class="personal">
+                        <div class="personal-item">
+                            <img src="" alt="">
+                            <h4></h4>
+                        </div>
+                        <div class="personal-item">
+                            <img src="" alt="">
+                            <h4></h4>
+                        </div>
+                        <div class="personal-item">
+                            <img src="" alt="">
+                            <h4></h4>
+                        </div>
+                        <div class="personal-item">
+                            <img src="" alt="">
+                            <h4></h4>
+                        </div>
+                        <div class="personal-item">
+                            <img src="" alt="">
+                            <h4></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+
+
+        </section>
+    </main>
+</body>
+
+</html>
