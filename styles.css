@@ -159,6 +159,7 @@ header {
     padding: 5px;
     color: #c5c5c5;
     font-style: italic;
+    font-family:"Architects Daughter" ;
 }
 
 /* HEADER */
@@ -316,6 +317,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .cards-conteiner h2 {
@@ -335,6 +337,7 @@ body {
     align-items: center;
     padding: 10px;
     gap: 50px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -358,4 +361,53 @@ body {
     font-family: "Architects Daughter";
     font-weight: 700;
     font-size: 18px;
+}
+
+.card-popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: red;
+    width: 280px;
+    height: 350px;
+    gap: 10px;
+    font-family: "Architects Daughter";
+    padding: 5px 10px;
+}
+
+.card-popular-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-popular h3 {
+    font-size: 16px;
+}
+
+.card-popular span {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Comic Neue";
+}
+
+.card-popular p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.button-popular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    gap: 10px;
+}
+
+.button-popular img {
+    width: 15px;
+    height: 15px;
 }
