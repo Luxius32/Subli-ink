@@ -1,0 +1,313 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+/* colours */
+:root {
+    --primary: #eb7072;
+    --secondary: #f5ba90;
+    --button: #f5e2b8;
+    --font: #151515;
+    --font2: #dadada;
+    --various: #a2caa5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Architects Daughter";
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to bottom, var(--primary), #ffffff);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    position: relative;
+    gap: 10px;
+}
+
+.logo {
+    margin: -5px 5px 5px;
+    align-items: center;
+}
+
+.navbar {
+    /* .navbar-list { */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar-list a {
+    color: var(--font)
+}
+
+.navbar-list {
+    display: flex;
+    gap: 15px;
+    font-family: "Architects Daughter";
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.envio {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    position: absolute;
+    left: 6%;
+    bottom: 24px;
+}
+
+.envio img {
+    width: 20px;
+    height: 20px;
+}
+
+.envio a {
+    font-family: "Architects Daughter";
+    color: var(--font);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.header-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    padding: 10px;
+    gap: 50px;
+    position: absolute;
+    right: 50%;
+    left: 20%;
+    top: 15px;
+}
+
+.zona-derecha {
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    right: 80px;
+    top: 30px;
+    font-size: 12px;
+}
+
+.account a {
+    color: var(--font);
+    font-family: "Architects Daughter";
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.login {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-label {
+    display: none;
+}
+
+.cart-icon {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 27px;
+    right: 10px;
+}
+
+.barra-busqueda {
+    border-radius: 5px;
+    border: 1px solid var(--secondary);
+    width: 300px;
+    padding: 3px;
+}
+
+::placeholder {
+    padding: 5px;
+    color: #c5c5c5;
+    font-style: italic;
+    font-family: "Architects Daughter";
+}
+
+/* BODY */
+
+body {
+    background-image: url(/Assets/Imagenes/body2.jpg);
+}
+
+/* FORM */
+
+#formulario,
+.login-conteiner,
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formulario {
+    padding: 20px;
+    margin: 20px 30px 150px;
+}
+
+#formulario h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(to top, var(--font2), var(--font), var(--font2));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 20px;
+}
+
+#formulario button {
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient( to top, var(--button),var(--secondary));
+    text-align: center;
+    border:1px solid var(--primary);
+    color:#151515;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#formulario a {
+    color: #151515;
+}
+
+
+.login-conteiner {
+    padding: 20px;
+    margin: 10px 30px 50px;
+    border: 1px solid #7d7d7d;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #7d7d7d;
+    gap: 20px;
+    width: 70%;
+    font-weight: 700;
+}
+
+hr {
+    border: 1px solid #7d7d7d;
+    width: 80%;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+#login-form input {
+    width: 230px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+}
+
+.login-page {
+    gap: 10px;
+    padding: 10px;
+}
+
+.login-item,
+button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.login-item:last-child {
+    gap: 170px;
+}
+
+/* CIERRE */
+
+#cierre,
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cierre {
+    padding: 20px 30px;
+    background: linear-gradient(to top, var(--primary), var(--secondary));
+    gap: 30px;
+}
+
+.redes {
+    padding: 10px;
+    gap: 15px;
+    text-align: center;
+}
+
+.redes-icon,
+.proveedores,
+.copyright {
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}
+
+.redes-icon {
+    gap: 20px;
+}
+
+hr {
+    width: 50%;
+    border: 1px solid #151515;
+}
+
+.proveedores{
+    gap: 200px;
+    padding: 10px;
+}
+
+.copyright {
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.copyright img {
+    width: 15px;
+    height: 15px;
+}
+
+
+
+
