@@ -168,14 +168,26 @@ body {
     background-image: url(/Assets/Imagenes/body2.jpg);
 }
 
-/* FORM */
+/* MAIN */
 
 #formulario,
-.login-conteiner,
-.login-page {
+.conteiner,
+.terminos,
+.google {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+span,
+.google-button,
+.input-item,
+.input-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 #formulario {
@@ -193,122 +205,49 @@ body {
     padding: 20px;
 }
 
-#formulario button {
-    padding: 10px;
-    border-radius: 5px;
-    background: linear-gradient( to top, var(--button),var(--secondary));
-    text-align: center;
-    border:1px solid var(--primary);
-    color:#151515;
-    letter-spacing: 1px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-#formulario a {
-    color: #151515;
-}
 
 
-.login-conteiner {
+.conteiner {
     padding: 20px;
     margin: 10px 30px 50px;
     border: 1px solid #7d7d7d;
     border-radius: 10px;
     box-shadow: 2px 2px 8px #7d7d7d;
-    gap: 20px;
+    gap: 25px;
     width: 70%;
     font-weight: 700;
 }
+
+.conteiner a {
+    color: #151515;
+}
+
+.conteiner span {
+    gap: 5px;
+}
+
+.conteiner h3 {
+    font-size: 12px;
+}
+
+.google {
+    gap: 10px;
+}
+
+.google-button {
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(to top, var(--button), var(--secondary));
+    text-align: center;
+    border: 1px solid var(--primary);
+    color: #151515;
+    letter-spacing: 1px;
+    font-weight: bold;
+    gap: 10px;
+}
+
 
 hr {
     border: 1px solid #7d7d7d;
     width: 80%;
 }
-
-#login-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-}
-
-#login-form input {
-    width: 230px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid var(--primary);
-}
-
-.login-page {
-    gap: 10px;
-    padding: 10px;
-}
-
-.login-item,
-button {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.login-item:last-child {
-    gap: 170px;
-}
-
-/* CIERRE */
-
-#cierre,
-.redes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#cierre {
-    padding: 20px 30px;
-    background: linear-gradient(to top, var(--primary), var(--secondary));
-    gap: 30px;
-}
-
-.redes {
-    padding: 10px;
-    gap: 15px;
-    text-align: center;
-}
-
-.redes-icon,
-.proveedores,
-.copyright {
-    display: flex;
-    justify-content:  center;
-    align-items: center;
-}
-
-.redes-icon {
-    gap: 20px;
-}
-
-hr {
-    width: 50%;
-    border: 1px solid #151515;
-}
-
-.proveedores{
-    gap: 200px;
-    padding: 10px;
-}
-
-.copyright {
-    gap: 10px;
-    text-align: center;
-    padding: 10px;
-}
-.copyright img {
-    width: 15px;
-    height: 15px;
-}
-
-
-
-

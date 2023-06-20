@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subli Ink | Crear cuenta</title>
     <link rel="shorcut icon" href="/Assets/Iconos/Taza.png">
+    <link rel="stylesheet" href="form2-styles.css">
 </head>
 
 <body>
@@ -60,37 +61,54 @@
     </header>
 
     <main>
-        <section>
-            <h1></h1>
+        <section id="formulario">
+
+            <h1>Crear una cuenta</h1>
+
             <div class="conteiner">
-                <span>¿Ya tienes una cuenta?<a href="#"></a>¡Inicie sesión!</span>
+                <span>¿Ya tienes una cuenta?<a href="form.html">¡Inicie sesión!</a></span>
+
                 <div class="google">
                     <h3>O conectate a través de otros servicios</h3>
-                    <button><img src="/Assets/Iconos/Google.png" alt="google">Iniciar sesión con Google</button>
+                    <button class="google-button"><img src="/Assets/Iconos/Google.png" alt="google">Iniciar sesión con Google</button>
                 </div>
-                <form>
-                    <label for="nombre">Nombres</label>
-                    <input type="text" id="nombre" placeholder="Nombres" maxlength="30">
 
-                    <label for="apellidos">Apellidos</label>
-                    <input type="text" id="Apellidos" placeholder="Apellidos" maxlength="30">
+                <hr>
 
-                    <label for="email">Dirección de correo electrónico</label>
-                    <input type="email" id="email" placeholder="Ejemplo@gmail.com" maxlength="50">
+                <form class="form-registro">
+                    <div class="input-item">
+                        <label for="nombre">Nombres</label>
+                        <input type="text" id="nombre" placeholder="Nombres" maxlength="30">
+                    </div>
+                    <div class="input-item">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="Apellidos" placeholder="Apellidos" maxlength="30">
+                    </div>
+                    <div class="input-item">
+                        <label for="email">Dirección de correo electrónico</label>
+                        <input type="email" id="email" placeholder="Ejemplo@gmail.com" maxlength="50">
+                    </div>
+                    <div class="input-item">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="nombre" placeholder="Contraseña" maxlength="30">
+                    </div>
+                    <div class="input-item">
+                        <label for="envio">Dirección para envio</label>
+                    </div><input type="text" id="envio" placeholder="Dirección" maxlength="
+                    30">
 
-                    <label for="password">Contraseña</label>
-                    <input type="password" id="nombre" placeholder="Contraseña" maxlength="30">
-
-                    <label for="envio">Dirección para envio</label>
-                    <input type="text" id="envio" placeholder="Dirección" maxlength="30">
-                    
                     <div class="terminos">
-                        <label for="ofertas">Quiero recibir ofertas y novedades por email</label>
-                        <input type="checkbox" id="ofertas">
 
-                        <label for="condiciones">Acepto las condiciones generales y la política de
-                            confidencialidad</label>
-                        <input type="checkbox" id="condiciones">
+                        <div class="input-checkbox">
+                            <input type="checkbox" id="ofertas">
+                            <label for="ofertas">Quiero recibir ofertas y novedades por email</label>
+                        </div>
+                        
+                        <div class="input-checkbox">
+                            <input type="checkbox" id="condiciones">
+                            <label for="condiciones">Acepto las condiciones generales y la política de
+                                confidencialidad</label>
+                        </div>
                     </div>
                 </form>
             </div>
