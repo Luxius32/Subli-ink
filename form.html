@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subli Ink | Log In</title>
+    <link rel="shorcut icon" href="/Assets/Iconos/Taza.png">
+    <link rel="stylesheet" href="form-styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <img src="/Assets/Iconos/Logo2.png" alt="logo" class="logo"> <!-- Enviar a -->
+        <div class="envio">
+            <img src="/Assets/Iconos/Ubicacion.png" alt="">
+            <a href="#portada">Enviar a Calle Falsa 123</a>
+        </div>
+
+        <!-- Navbar y barra de busqueda -->
+        <nav class="navbar">
+
+            <!-- menu hamburguesa -->
+            <label for="menu-toggle" class="menu-label">
+                <img src="/Assets/Iconos/menu.png" alt="menu" class="menu-icon">
+            </label>
+            <input type="checkbox" id="menu-toggle" class="menu-label">
+            <div class="header-mid">
+
+                <!-- Barra de busqueda -->
+                <label for="barra-busqueda" class="search"></label>
+                <input type="text" id="barra-busqueda" class="barra-busqueda" placeholder="Busca tu diseño">
+
+                <!-- navbar list -->
+                <ul class="navbar-list">
+                    <li><a href="#portada">Home</a></li>
+                    <li><a href="#cards">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#sumate">Sumate</a></li>
+                </ul>
+            </div>
+
+            <!-- Login y carrito -->
+            <div class="zona-derecha">
+                <!-- Ingreso a la pagina -->
+                <div class="account">
+                    <!-- <a href="#">Mis compras</a> -->
+                    <div class="login">
+                        <a href="#portada">Crea tu cuenta</a>
+                        <p>|</p>
+                        <a href="#">Inicia sesión</a>
+                    </div>
+                </div>
+
+                <!-- Carrito -->
+                <img src="/Assets/Iconos/carrito.png" alt="cart-icon" class="cart-icon">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h1>Iniciar sesión con su cuenta</h1>
+            <div class="conteiner">
+                <div class="login">
+                    <form>
+                        <label for="email">Dirección de correo electronico</label>
+                        <input type="email" id="email" placeholder="Ejemplo@gmail.com">
+
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" placeholder="Su contraseña" maxlength="10">
+                    </form>
+                    <a href="">¿Olvidó su contraseña?</a>
+                    <button>Iniciar sesión</button>
+                </div>
+                <hr>
+                <div class="login2">
+                    <button><img src="/Assets/Iconos/Google.png" alt="google">Iniciar sesión con Google</button>
+                </div>
+                <hr>
+                <a href=""></a>¿No tienes una cuenta? Crea una aquí</a>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

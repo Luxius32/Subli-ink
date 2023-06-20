@@ -32,7 +32,6 @@
 
 /* HEADER */
 header {
-    max-width: 1500px;
     background: linear-gradient(to bottom, var(--primary), #ffffff);
     padding: 5px;
     display: flex;
@@ -167,6 +166,8 @@ header {
 /* BODY */
 body {
     background-image: url(/Assets/Imagenes/body2.jpg);
+    background-size: contain;
+    font-family: "Architects Daughter" ;
 }
 
 #portada {
@@ -174,6 +175,10 @@ body {
     position: relative;
     padding: 10px;
     margin-bottom: 30px;
+}
+
+#portada a {
+    color:  #151515;
 }
 
 /* Slider */
@@ -309,6 +314,7 @@ body {
 #cards {
     position: relative;
     padding: 10px;
+    margin: 250px 30px;
 }
 
 .cards-conteiner {
@@ -316,12 +322,19 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     flex-wrap: wrap;
+    gap: 230px;
 }
 
-.cards-conteiner h2 {
-    font-family: "Architects Daughter";
+.productos,
+#mas-vendidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.productos h2 {
     font-size: 2rem;
     font-weight: 700;
     background: linear-gradient(to top, var(--font2), var(--font), var(--font2));
@@ -329,14 +342,28 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     padding: 20px;
+    position: absolute;
+    top: -80px;
 }
 
+#mas-vendidos h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(to top, var(--font2), var(--font), var(--font2));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    padding: 20px;
+    position: absolute;
+    top:-80px;
+
+}
 .cards-subconteiner {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    gap: 50px;
+    gap: 60px;
     flex-wrap: wrap;
 }
 
@@ -346,9 +373,9 @@ body {
     align-items: center;
     width: 230px;
     height: 240px;
-    border: 1px solid #f5e2b8;
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px #ffb0b2;
+    /* border: 1px solid #c1c1c1; */
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px  #7d7d7d;
 
 }
 
@@ -358,7 +385,6 @@ body {
 }
 
 .card span {
-    font-family: "Architects Daughter";
     font-weight: 700;
     font-size: 18px;
 }
@@ -367,12 +393,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: red;
+    /* background: linear-gradient(to top,var(--primary),var(--secondary)); */
     width: 280px;
     height: 350px;
     gap: 10px;
-    font-family: "Architects Daughter";
     padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px  #7d7d7d;
 }
 
 .card-popular-info {
@@ -389,7 +416,7 @@ body {
 .card-popular span {
     font-size: 20px;
     font-weight: 700;
-    font-family: "Comic Neue";
+    letter-spacing: 2px;
 }
 
 .card-popular p {
@@ -412,12 +439,12 @@ body {
     height: 15px;
 }
 
-/* Nosotros */
+/* NOSOTROS */
 
 #nosotros,
 .info-conteiner,
 .info-item,
-.info-personal{
+.info-personal {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -429,7 +456,7 @@ body {
 }
 
 #nosotros p {
-    font-family:"Architects Daughter";
+    font-family: "Architects Daughter";
     font-size: 14px;
 }
 
@@ -475,12 +502,11 @@ body {
 /* CONTACTO */
 
 #contacto,
-.contactanos,
-.sumate,
+#sumate,
 .sumate-info,
+.contactanos,
 form,
 .item,
-.redes,
 .dudas {
     display: flex;
     flex-direction: column;
@@ -488,28 +514,127 @@ form,
 }
 
 .phone-mail,
-.redes-icon,
 .item {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#contacto {
+    padding: 10px 30px;
+    margin: 150px 10px;
+}
+
+#contacto h2 {
+    font-family: "Architects Daughter";
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(to top, var(--font2), var(--font), var(--font2));
+    padding: 10px;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.phone-mail {
+    gap: 100px;
+    padding: 30px;
+}
+
+.item {
+    gap: 15px;
+    font-family: "Architects Daughter";
+    letter-spacing: 2px;
+    font-size: 20px;
+    width: 350px;
+    height: 90px;
+    background: #a2caa5;
+}
+
+.dudas {
+    padding: 50px 30px;
+    gap: 20px;
+}
+
+.dudas h3 {
+    font-family: "Architects Daughter";
+    font-size: 22px;
+    font-weight: 700;
+    background: linear-gradient(to top, var(--font2), var(--font), var(--font2));
+    padding: 10px;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.textarea {
+    resize: none;
+}
+
+#sumate {
+    padding: 10px 30px;
+    gap: 20px;
+    font-family: "Architects Daughter";
+}
+
+form {
+    gap: 2px;
+}
+
 /* CIERRE */
 
-#cierre {
+#cierre,
+.redes {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#cierre {
+    padding: 20px 30px;
+    background: linear-gradient(to top, var(--primary), var(--secondary));
+    gap: 30px;
+}
+
+.redes {
+    padding: 10px;
+    gap: 15px;
+    text-align: center;
+}
+
+.redes-icon,
 .proveedores,
 .copyright {
     display: flex;
+    justify-content:  center;
     align-items: center;
 }
 
-.proveedores{
-    justify-content: space-around;
-    gap: px;
+.redes-icon {
+    gap: 20px;
 }
+
+hr {
+    width: 50%;
+    border: 1px solid #151515;
+}
+
+.proveedores{
+    gap: 200px;
+    padding: 10px;
+}
+
+.copyright {
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.copyright img {
+    width: 15px;
+    height: 15px;
+}
+
+
+
+
+

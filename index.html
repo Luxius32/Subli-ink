@@ -36,10 +36,10 @@
                 <!-- navbar list -->
                 <ul class="navbar-list">
                     <li><a href="#portada">Home</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Sumate</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#cards">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#sumate">Sumate</a></li>
                 </ul>
             </div>
 
@@ -78,7 +78,7 @@
                             <img class="slider-img" src="/Assets/Slider/Slider 2.png" alt="imagen2">
                             <div class="slider2-info">
                                 <span class="slider-text">Lo más vendido del mes</span>
-                                <button class="slider-button">Ver productos</button>
+                                <button class="slider-button"><a href="#mas-vendidos">Ver productos</a></button>
                             </div>
                         </li>
 
@@ -87,7 +87,7 @@
                             <img class="slider-img" src="/Assets/Slider/Slider 3.png" alt="imagen3">
                             <div class="slider3-info">
                                 <span class="slider-text">Vende nuestros productos</span>
-                                <button class="slider-button">Contáctanos</button>
+                                <button class="slider-button"><a href="#sumate">Contáctanos</a></button>
                             </div>
                         </li>
                     </ul>
@@ -99,113 +99,116 @@
             <!-- Cards Conteiner -->
             <div class="cards-conteiner">
 
-                <h2>Nuestros Productos</h2>
+                <div class="productos">
+                    <h2>Nuestros Productos</h2>
+                    <!-- Contenedor 1 -->
+                    <div class="cards-subconteiner">
+                        <!-- Card 1 -->
+                        <div class="card">
+                            <a href=""><img src="/Assets/Productos/taza ceramica.png" alt="taza ceramica" class="card-img"></a>
+                            <span>Taza cerámica</span>
+                        </div>
 
-                <!-- Contenedor 1 -->
-                <div class="cards-subconteiner">
-                    <!-- Card 1 -->
-                    <div class="card">
-                        <img src="/Assets/Productos/taza ceramica.png" alt="taza ceramica" class="card-img">
-                        <span>Taza cerámica</span>
+                        <!-- Card 2 -->
+                        <div class="card">
+                            <a href=""><img src="Assets/Productos/Jarro.png" alt="vaso termico" class="card-img"></a>
+                            <span>Vaso térmico</span>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="card">
+                            <a href=""><img src="/Assets/Productos/Chopp.png" alt="chopp" class="card-img"></a>
+                            <span>Chopp polímero</span>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="card">
+                            <a href=""><img src="/Assets/Productos/Mate polimero.png" alt="mate polimero" class="card-img"></a>
+                            <span>Mate polímero</span>
+                        </div>
                     </div>
 
-                    <!-- Card 2 -->
-                    <div class="card">
-                        <img src="Assets/Productos/Jarro.png" alt="vaso termico" class="card-img">
-                        <span>Vaso térmico</span>
-                    </div>
+                    <!-- Contenedor 2 -->
+                    <div class="cards-subconteiner">
 
-                    <!-- Card 3 -->
-                    <div class="card">
-                        <img src="/Assets/Productos/Chopp.png" alt="chopp" class="card-img">
-                        <span>Chopp polímero</span>
-                    </div>
+                        <!-- Card 1 -->
+                        <div class="card">
+                            <a href=""><img src="/Assets/Productos/Taza magica.png" alt="taza mágica" class="card-img"></a>
+                            <span>Taza mágica</span>
+                        </div>
 
-                    <!-- Card 4 -->
-                    <div class="card">
-                        <img src="/Assets/Productos/Mate polimero.png" alt="mate polimero" class="card-img">
-                        <span>Mate polímero</span>
+                        <!-- Card 2 -->
+                        <div class="card">
+                            <a href=""><img src="/Assets/Productos/Mate ceramica.png" alt="mate ceramica" class="card-img"></a>
+                            <span>Mate cerámica</span>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="card">
+                            <a href=""><img src="/Assets/Productos/hoppy.png" alt="botella hoppy" class="card-img"></a>
+                            <span>Botella hoppy</span>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="card">
+                            <a href=""><img src="/Assets/Productos/Taza polimero.png" alt="taza polimero" class="card-img"></a>
+                            <span>Taza polímero</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Contenedor 2 -->
-                <div class="cards-subconteiner">
+                <div id="mas-vendidos">
+                    <h2>Lo más vendido</h2>
 
-                    <!-- Card 1 -->
-                    <div class="card">
-                        <img src="/Assets/Productos/Taza magica.png" alt="taza mágica" class="card-img">
-                        <span>Taza mágica</span>
-                    </div>
+                    <!-- Contenedor 3 -->
+                    <div class="cards-subconteiner">
 
-                    <!-- Card 2 -->
-                    <div class="card">
-                        <img src="/Assets/Productos/Mate ceramica.png" alt="mate ceramica" class="card-img">
-                        <span>Mate cerámica</span>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="card">
-                        <img src="/Assets/Productos/hoppy.png" alt="botella hoppy" class="card-img">
-                        <span>Botella hoppy</span>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="card">
-                        <img src="/Assets/Productos/Taza polimero.png" alt="taza polimero" class="card-img">
-                        <span>Taza polímero</span>
-                    </div>
-                </div>
-
-                <h2>Lo más vendido</h2>
-
-                <!-- Contenedor 3 -->
-                <div class="cards-subconteiner">
-
-                    <!-- Card 1 -->
-                    <div class="card-popular">
-                        <img src="/Assets/Productos mas vendidos/Taza1.png" alt="taza ceramica" class="card-img">
-                        <div class="card-popular-info">
-                            <h3>Taza Mario Bros psicodélica</h3>
-                            <span>$1500</span>
-                            <p>Hasta 3 cuotas sin interes</p>
-                            <button class="button-popular">Agregar al carrito <img src="/Assets/Iconos/carrito2.png"
-                                    alt="cart-icon"></button>
+                        <!-- Card 1 -->
+                        <div class="card-popular">
+                            <img src="/Assets/Productos mas vendidos/Taza1.png" alt="taza ceramica" class="card-img">
+                            <div class="card-popular-info">
+                                <h3>Taza Mario Bros psicodélica</h3>
+                                <span>$ 1500</span>
+                                <p>Hasta 3 cuotas sin interes</p>
+                                <button class="button-popular">Agregar al carrito <img src="/Assets/Iconos/carrito2.png"
+                                        alt="cart-icon"></button>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Card 2 -->
-                    <div class="card-popular">
-                        <img src="/Assets/Productos mas vendidos/Botella.png" alt="botella hoppy" class="card-img">
-                        <div class="card-popular-info">
-                            <h3>Botella hoppy doble pico Pokemón</h3>
-                            <span>$2200</span>
-                            <p>Hasta 3 cuotas sin interes</p>
-                            <button class="button-popular">Agregar al carrito <img src="/Assets/Iconos/carrito2.png"
-                                    alt="cart-icon"></button>
+                        <!-- Card 2 -->
+                        <div class="card-popular">
+                            <img src="/Assets/Productos mas vendidos/Botella.png" alt="botella hoppy" class="card-img">
+                            <div class="card-popular-info">
+                                <h3>Botella hoppy doble pico Pokemón</h3>
+                                <span>$ 2200</span>
+                                <p>Hasta 3 cuotas sin interes</p>
+                                <button class="button-popular">Agregar al carrito <img src="/Assets/Iconos/carrito2.png"
+                                        alt="cart-icon"></button>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Card 3 -->
-                    <div class="card-popular">
-                        <img src="/Assets/Productos mas vendidos/Mate.png" alt="mate ceramica" class="card-img">
-                        <div class="card-popular-info">
-                            <h3>Mate Grey´s Anatomy</h3>
-                            <span>$1500</span>
-                            <p>Hasta 3 cuotas sin interes</p>
-                            <button class="button-popular">Agregar al carrito <img src="/Assets/Iconos/carrito2.png"
-                                    alt="cart-icon"></button>
+                        <!-- Card 3 -->
+                        <div class="card-popular">
+                            <img src="/Assets/Productos mas vendidos/Mate.png" alt="mate ceramica" class="card-img">
+                            <div class="card-popular-info">
+                                <h3>Mate Grey´s Anatomy</h3>
+                                <span>$ 1500</span>
+                                <p>Hasta 3 cuotas sin interes</p>
+                                <button class="button-popular">Agregar al carrito <img src="/Assets/Iconos/carrito2.png"
+                                        alt="cart-icon"></button>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Card 4 -->
-                    <div class="card-popular">
-                        <img src="/Assets/Productos mas vendidos/Taza2.png" alt="taza ceramica" class="card-img">
-                        <div class="card-popular-info">
-                            <h3>Taza dia del padre Star Wars</h3>
-                            <span>$1500</span>
-                            <p>Hasta 3 cuotas sin interes</p>
-                            <button class="button-popular">Agregar al carrito <img src="/Assets/Iconos/carrito2.png"
-                                    alt="cart-icon"></button>
+                        <!-- Card 4 -->
+                        <div class="card-popular">
+                            <img src="/Assets/Productos mas vendidos/Taza2.png" alt="taza ceramica" class="card-img">
+                            <div class="card-popular-info">
+                                <h3>Taza dia del padre Star Wars</h3>
+                                <span>$ 1500</span>
+                                <p>Hasta 3 cuotas sin interes</p>
+                                <button class="button-popular">Agregar al carrito <img src="/Assets/Iconos/carrito2.png"
+                                        alt="cart-icon"></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -309,13 +312,12 @@
                 </div>
 
                 <div class="dudas">
-                    <h2>Consultas o sugerencias</h2>
-                    <textarea name="textarea" id="textarea" cols="100" rows="10"></textarea>
+                    <h3>Consultas o sugerencias</h3>
+                    <textarea name="textarea" id="textarea" cols="100" rows="10" class="textarea"></textarea>
                     <button>Enviar</button>
-
                 </div>
 
-                <div class="sumate">
+                <div id="sumate">
                     <div class="sumate-info">
                         <h2>Sumate a nuestro equipo</h2>
                         <p>Si queres ser parte de nuestro equipo y revender nuestros productos dejanos tus datos y
@@ -328,12 +330,15 @@
                         <label for="apellido"></label>
                         <input type="text" id="apellido" placeholder="Apellido">
                         <label for="mail"></label>
-                        <input type="email" id="mail" placeholder="ejemplo@gmail.com">
+                        <input type="email" id="mail" placeholder="Ejemplo@gmail.com">
                     </form>
                     <button>Enviar</button>
                 </div>
             </div>
 
+        </section>
+
+        <section id="cierre">
             <div class="redes">
                 <h3>Seguinos en nuestras redes</h3>
                 <div class="redes-icon">
@@ -346,14 +351,13 @@
                 </div>
             </div>
 
-        </section>
-
-        <section id="cierre">
             <div class="proveedores">
                 <img src="/Assets/Proveedores/Art jet negro.png" alt="imagen">
                 <img src="/Assets/Proveedores/Orca negro.png" alt="imagen">
                 <img src="/Assets/Proveedores/Polymer mug negro.png" alt="imagen">
             </div>
+
+            <hr>
 
             <div class="copyright">
                 <img src="/Assets/Iconos/copyright.png" alt="copyright">
