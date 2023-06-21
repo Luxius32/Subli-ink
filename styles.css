@@ -168,7 +168,6 @@ header {
 /* BODY */
 body {
     background-image: url(/Assets/Imagenes/body2.jpg);
-    background-size: contain;
     font-family: "Architects Daughter";
 }
 
@@ -634,6 +633,8 @@ form input {
     width: 50%;
 }
 
+
+
 /* CIERRE */
 
 #cierre,
@@ -687,3 +688,62 @@ hr {
     width: 15px;
     height: 15px;
 }
+
+/* RECUPERAR CONTRASEÑA */
+
+#recuperar,
+.recu-conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#recuperar {
+    padding: 20px;
+    margin: 20px 30px 150px;
+}
+
+.recu-conteiner {
+    padding: 20px;
+    margin: 10px 30px 50px;
+    border: 1px solid #7d7d7d;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #7d7d7d;
+    gap: 25px;
+    width: 70%;
+    font-weight: 700;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.input input {
+    width: 600px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary);
+}
+
+.buttons {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    background: linear-gradient(60deg, var(--button), var(--secondary), var(--button));
+    text-align: center;
+    border: 1px solid var(--secondary);
+    color: #151515;
+    letter-spacing: 1px;
+    font-weight: bold;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px #7d7d7d;
+}
+
+
