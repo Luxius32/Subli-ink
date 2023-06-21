@@ -28,11 +28,13 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    font-family: "Architects daughter";
 }
 
 /* HEADER */
 header {
-    background: linear-gradient(to bottom, var(--primary), #ffffff);
+    /* background: linear-gradient(to bottom, var(--primary), #ffffff); */
+    background: linear-gradient(to bottom, var(--secondary), var(--button), #ffffff);
     padding: 5px;
     display: flex;
     justify-content: space-between;
@@ -167,7 +169,7 @@ header {
 body {
     background-image: url(/Assets/Imagenes/body2.jpg);
     background-size: contain;
-    font-family: "Architects Daughter" ;
+    font-family: "Architects Daughter";
 }
 
 #portada {
@@ -178,7 +180,7 @@ body {
 }
 
 #portada a {
-    color:  #151515;
+    color: #151515;
 }
 
 /* Slider */
@@ -274,8 +276,8 @@ body {
     font-family: "Architects Daughter";
 }
 
-.slider-text {
-    font-size: 2rem;
+.tituloh2 {
+    font-size: 38px;
     font-weight: 700;
     background: linear-gradient(to top, var(--font2), var(--font), var(--font2));
     padding: 10px;
@@ -284,15 +286,21 @@ body {
     -webkit-background-clip: text;
 }
 
-.slider-button {
-    background: var(--button);
-    border: none;
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 15px;
     border-radius: 5px;
-    padding: 5px 60px;
+    background: linear-gradient(60deg, var(--button), var(--secondary), var(--button));
+    text-align: center;
+    border: 1px solid var(--secondary);
+    color: #151515;
+    letter-spacing: 1px;
+    font-weight: bold;
+    gap: 10px;
     cursor: pointer;
-    font-family: "Architects Daughter";
-    font-weight: 700;
-    font-size: 16px;
+    box-shadow: 2px 2px 8px #7d7d7d;
 }
 
 /* Slider 3 */
@@ -334,36 +342,26 @@ body {
     align-items: center;
     position: relative;
 }
+
 .productos h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    background: linear-gradient(to top, var(--font2), var(--font), var(--font2));
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
     padding: 20px;
     position: absolute;
     top: -80px;
 }
 
 #mas-vendidos h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    background: linear-gradient(to top, var(--font2), var(--font), var(--font2));
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
     padding: 20px;
     position: absolute;
-    top:-80px;
+    top: -80px;
 
 }
+
 .cards-subconteiner {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    gap: 60px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
@@ -373,9 +371,10 @@ body {
     align-items: center;
     width: 230px;
     height: 240px;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
     /* border: 1px solid #c1c1c1; */
     border-radius: 15px;
-    box-shadow: 2px 2px 8px  #7d7d7d;
+    box-shadow: 2px 2px 8px #7d7d7d;
 
 }
 
@@ -393,13 +392,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background: linear-gradient(to top,var(--primary),var(--secondary)); */
-    width: 280px;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
+    width: 275px;
     height: 350px;
     gap: 10px;
     padding: 5px 10px;
     border-radius: 15px;
-    box-shadow: 2px 2px 8px  #7d7d7d;
+    box-shadow: 2px 2px 8px #7d7d7d;
 }
 
 .card-popular-info {
@@ -424,17 +423,7 @@ body {
     font-weight: 700;
 }
 
-.button-popular {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    gap: 10px;
-}
-
-.button-popular img {
+.buttons img {
     width: 15px;
     height: 15px;
 }
@@ -462,35 +451,47 @@ body {
 
 .info-item {
     text-align: justify;
-    background: #a2caa5;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
     width: 90%;
-    height: 250px;
-    padding: 20px 30px;
+    height: 270px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 8px #7d7d7d;
 }
 
 .info-personal {
-    background: #a2caa5;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
     width: 90%;
-    height: 250px;
+    height: 270px;
     gap: 5px;
-    padding: 20px 30px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 8px #7d7d7d;
 }
 
 .personal {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    width: 400px;
+    padding: 40px;
+    width: 900px;
     height: 10px;
-    gap: 50px;
+    text-align: center;
+    gap: 40px;
 }
 
 .personal-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 14px;
-    gap: 5px;
+    font-size: 12px;
+    width: 150px;
+    gap: 1px;
+}
+
+.personal-item span {
+    padding: 5px;
 }
 
 .foto-carnet {
@@ -523,6 +524,7 @@ form,
 #contacto {
     padding: 10px 30px;
     margin: 150px 10px;
+
 }
 
 #contacto h2 {
@@ -536,9 +538,26 @@ form,
     -webkit-background-clip: text;
 }
 
+.contactanos {
+    display: flex;
+    gap: 20px;
+}
+
+.contactanos-conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #7d7d7d;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #7d7d7d;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
+
+}
+
 .phone-mail {
-    gap: 100px;
-    padding: 30px;
+    gap: 5px;
+    padding: 10px;
 }
 
 .item {
@@ -548,11 +567,10 @@ form,
     font-size: 20px;
     width: 350px;
     height: 90px;
-    background: #a2caa5;
 }
 
 .dudas {
-    padding: 50px 30px;
+    padding: 5px 30px;
     gap: 20px;
 }
 
@@ -569,16 +587,42 @@ form,
 
 .textarea {
     resize: none;
+    padding: 10px;
 }
 
 #sumate {
-    padding: 10px 30px;
+    padding: 50px 30px;
+    margin: 500px 50px 150px;
     gap: 20px;
     font-family: "Architects Daughter";
+    border: 1px solid #7d7d7d;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #7d7d7d;
+    gap: 20px;
+    width: 91%;
+    font-weight: 700;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
+    letter-spacing: 1px;
+}
+
+.sumate-info {
+    text-align: center;
+    gap: 20px;
 }
 
 form {
-    gap: 2px;
+    gap: 10px;
+}
+
+form input {
+    width: 300px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary);
+}
+
+#sumate button {
+    width: 50%;
 }
 
 /* CIERRE */
@@ -606,7 +650,7 @@ form {
 .proveedores,
 .copyright {
     display: flex;
-    justify-content:  center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -619,7 +663,7 @@ hr {
     border: 1px solid #151515;
 }
 
-.proveedores{
+.proveedores {
     gap: 200px;
     padding: 10px;
 }
@@ -629,12 +673,8 @@ hr {
     text-align: center;
     padding: 10px;
 }
+
 .copyright img {
     width: 15px;
     height: 15px;
 }
-
-
-
-
-

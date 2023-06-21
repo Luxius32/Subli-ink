@@ -33,7 +33,7 @@
 
 /* HEADER */
 header {
-    background: linear-gradient(to bottom, var(--primary), #ffffff);
+    background: linear-gradient(to bottom, var(--secondary), var(--button), #ffffff);
     padding: 5px;
     display: flex;
     justify-content: space-between;
@@ -216,6 +216,7 @@ span,
     gap: 25px;
     width: 70%;
     font-weight: 700;
+    background: linear-gradient(20deg, var(--secondary), var(--button));
 }
 
 .conteiner a {
@@ -238,14 +239,15 @@ span,
     padding: 10px;
     margin: 15px;
     border-radius: 5px;
-    background: linear-gradient(to top, var(--button), var(--secondary));
+    background: linear-gradient(60deg, var(--button), var(--secondary), var(--button));
     text-align: center;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--secondary);
     color: #151515;
     letter-spacing: 1px;
     font-weight: bold;
     gap: 10px;
     cursor: pointer;
+    box-shadow: 2px 2px 8px #7d7d7d;
 }
 
 
@@ -275,7 +277,7 @@ hr {
     width: 600px;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--secondary);
 }
 
 .terminos {
