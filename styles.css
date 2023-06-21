@@ -356,6 +356,15 @@ body {
 
 }
 
+.productos-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
 .cards-subconteiner {
     display: flex;
     justify-content: center;
