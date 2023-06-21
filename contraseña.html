@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subli Ink | Log In</title>
     <link rel="shorcut icon" href="/Assets/Iconos/Taza.png">
-    <link rel="stylesheet" href="form-styles.css">
+    <link rel="stylesheet" href="/contraseña.css">
 </head>
 
 <body>
@@ -61,43 +61,18 @@
     </header>
 
     <main>
-        <section id="formulario">
-
-            <h1>Iniciar sesión con su cuenta</h1>
-
-            <div class="login-conteiner">
-
-                <div class="login-page">
-
-                    <form id="login-form">
-
-                        <div class="login-item">
-                            <label for="email">Dirección de correo electronico</label>
-                            <input type="email" id="email" placeholder="Ejemplo@gmail.com" class="input-inicio">
-                        </div>
-
-                        <div class="login-item">
-                            <label for="password">Contraseña</label>
-                            <input type="password" id="password" placeholder="Su contraseña" maxlength="10"
-                                class="input-inicio">
-                        </div>
-                    </form>
-
-                    <p><a href="#">¿Olvidó su contraseña?</a></p>
-
-                    <button>Iniciar sesión</button>
+        <section id="recuperar">
+            <h1>Recuperar contraseña</h1>
+            <div class="recu-conteiner">
+                <div class="input">
+                    <label for="email">Coloque el email con el que se encuentra registrado.</label>
+                    <input type="email" id="email" placeholder="Ejemplo@gmail.com">
                 </div>
 
-                <hr>
+                <p>Se enviará el link de recuperación a su casilla de correo electrónico.</p>
 
-                <div class="login2">
+                <button class="buttons">Validar</button>
 
-                    <button><img src="/Assets/Iconos/Google.png" alt="google">Iniciar sesión con Google</button>
-                </div>
-
-                <hr>
-
-                <a href="form2.html">¿No tienes una cuenta? Crea una aquí</a>
             </div>
         </section>
 
