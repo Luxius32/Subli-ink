@@ -181,7 +181,7 @@ body {
 }
 
 span,
-.google-button,
+.buttons,
 .input-item,
 .input-checkbox {
     display: flex;
@@ -234,8 +234,9 @@ span,
     gap: 10px;
 }
 
-.google-button {
+.buttons {
     padding: 10px;
+    margin: 15px;
     border-radius: 5px;
     background: linear-gradient(to top, var(--button), var(--secondary));
     text-align: center;
@@ -244,10 +245,99 @@ span,
     letter-spacing: 1px;
     font-weight: bold;
     gap: 10px;
+    cursor: pointer;
 }
 
 
 hr {
     border: 1px solid #7d7d7d;
     width: 80%;
+}
+
+.form-registro,
+.input-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-registro {
+    gap: 10px;
+}
+
+.input-item {
+    gap: 2px;
+    position: relative;
+    right: 0%;
+}
+
+.form-registro input {
+    width: 600px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+}
+
+.terminos {
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+}
+
+.input-checkbox {
+    display: flex;
+    gap: 10px;
+}
+
+/* CIERRE */
+
+#cierre,
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cierre {
+    padding: 20px 30px;
+    background: linear-gradient(to top, var(--primary), var(--secondary));
+    gap: 30px;
+}
+
+.redes {
+    padding: 10px;
+    gap: 15px;
+    text-align: center;
+}
+
+.redes-icon,
+.proveedores,
+.copyright {
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}
+
+.redes-icon {
+    gap: 20px;
+}
+
+hr {
+    width: 50%;
+    border: 1px solid #151515;
+}
+
+.proveedores{
+    gap: 200px;
+    padding: 10px;
+}
+
+.copyright {
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.copyright img {
+    width: 15px;
+    height: 15px;
 }
