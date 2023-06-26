@@ -1,0 +1,91 @@
+/* Responsive pagina principal */
+
+/* WIDTH 1280 px */
+
+@media (max-width: 1280px) {
+
+    /* HEADER */
+    .barra-busqueda {
+        border-radius: 5px;
+        border: 1px solid var(--secondary);
+        width: 250px;
+        padding: 3px;
+    }
+
+    /* MAIN */
+
+    /* Portada */
+
+    #portada {
+        max-width: 1280px;
+    }
+
+    /* Slider */
+    .slider-frame {
+        width: 1000px;
+    }
+
+    .slider-img {
+        width: 1000px;
+    }
+
+
+    /* Slider 2 */
+
+    .slider2 {
+        display: flex;
+        padding: 0px;
+        position: relative;
+    }
+
+    .slider2-info {
+        right: 5%;
+        top: 35%;
+        font-family: "Architects Daughter";
+    }
+
+    .tituloh2 {
+        font-size: 30px;
+    }
+
+    /* CARD */
+
+    #cards {
+        margin: 250px 15px;
+    }
+
+    .productos-conteiner {
+        gap: 70px;
+    }
+
+    .cards-subconteiner {
+        gap: 20px;
+    }
+
+    .card-popular {
+        width: 275px;
+        height: 355px;
+    }
+}
+
+/* WIDTH 992 px */
+
+@media (max-width: 992px) {
+
+    /* Header */
+    .menu-label {
+        display: block;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 60px;
+        left: 5px;
+        gap: 35px;
+        background: linear-gradient(to top, var(--secondary), var(--button), #ffffff);
+        padding: 10px 200px;
+        z-index: 2;
+    }
+}

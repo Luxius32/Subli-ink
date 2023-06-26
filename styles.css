@@ -98,6 +98,7 @@ header a {
 
 .header-mid {
     position: relative;
+    padding: 20px;
     right: 1%;
     left: 3%;
     bottom: 6px;
