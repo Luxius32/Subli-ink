@@ -91,18 +91,13 @@ header a {
     position: relative;
 }
 
-.menu-label,
-#menu-toggle {
+.logo-navbar {
     display: none;
 }
 
-.header-mid {
-    position: relative;
-    padding: 20px;
-    right: 1%;
-    left: 3%;
-    bottom: 6px;
-    gap: 10px;
+.menu-label,
+#menu-toggle {
+    display: none;
 }
 
 .navbar-list {
@@ -110,13 +105,17 @@ header a {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
+    position: relative;
+    bottom: 5px;
+    left: 20%;
 }
 
 .zona-derecha {
     gap: 10px;
     padding: 0;
     position: relative;
-    bottom: 5px;
+    bottom: 3px;
+    right: 15px;
 }
 
 .login {
@@ -133,11 +132,17 @@ header a {
 .cart-icon {
     width: 30px;
     height: 20px;
+    position: absolute;
+    left: 90%;
 }
 
 .barra-busqueda {
     border-radius: 5px;
     border: 1px solid var(--secondary);
+    position: absolute;
+    top: 20px;
+    right: 52%;
+    top: 15px;
     width: 300px;
     padding: 3px;
 }
@@ -147,7 +152,7 @@ header a {
     color: #c5c5c5;
     font-style: italic;
     font-family: "Architects Daughter";
-} 
+}
 
 /* HEADER */
 
@@ -346,7 +351,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    gap: 90px;
+    gap: 60px;
     flex-wrap: wrap;
 }
 
@@ -355,7 +360,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10px;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -387,11 +392,29 @@ body {
     flex-direction: column;
     align-items: center;
     background: linear-gradient(20deg, var(--secondary), var(--button));
-    width: 275px;
+    width: 265px;
     height: 350px;
     gap: 10px;
     padding: 5px 10px;
     border-radius: 15px;
+    box-shadow: 2px 2px 8px #7d7d7d;
+}
+
+.buttons-popular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    background: linear-gradient(60deg, var(--button), var(--secondary), var(--button));
+    text-align: center;
+    border: 1px solid var(--secondary);
+    color: #151515;
+    letter-spacing: 1px;
+    font-weight: bold;
+    gap: 10px;
+    cursor: pointer;
     box-shadow: 2px 2px 8px #7d7d7d;
 }
 
@@ -417,9 +440,9 @@ body {
     font-weight: 700;
 }
 
-.buttons img {
-    width: 15px;
-    height: 15px;
+.buttons-popular img {
+    width: 20px;
+    height: 20px;
 }
 
 /* NOSOTROS */
@@ -435,7 +458,7 @@ body {
 }
 
 #nosotros {
-    padding: 30px 150px;
+    padding: 30px 40px;
 }
 
 #nosotros p {
@@ -542,11 +565,15 @@ form,
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    width: 80%;
     border: 1px solid #7d7d7d;
     border-radius: 10px;
     box-shadow: 2px 2px 8px #7d7d7d;
     background: linear-gradient(20deg, var(--secondary), var(--button));
+}
 
+.contactanos-conteiner button {
+    width: 50%;
 }
 
 .phone-mail {
@@ -593,7 +620,7 @@ form,
     border-radius: 10px;
     box-shadow: 2px 2px 8px #7d7d7d;
     gap: 20px;
-    width: 91%;
+    width: 80%;
     font-weight: 700;
     background: linear-gradient(20deg, var(--secondary), var(--button));
     letter-spacing: 1px;

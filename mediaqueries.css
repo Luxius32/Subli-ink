@@ -12,6 +12,20 @@
         padding: 3px;
     }
 
+    .cart-icon {
+        position: absolute;
+        left: 86%;
+    }
+
+    .navbar-list {
+        position: relative;
+        left: 25%;
+    }
+
+    .zona-derecha {
+        bottom: 4px;
+    }
+
     /* MAIN */
 
     /* Portada */
@@ -41,7 +55,6 @@
     .slider2-info {
         right: 5%;
         top: 35%;
-        font-family: "Architects Daughter";
     }
 
     .tituloh2 {
@@ -55,16 +68,110 @@
     }
 
     .productos-conteiner {
-        gap: 70px;
+        gap: 30px;
     }
 
     .cards-subconteiner {
-        gap: 20px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 60px;
     }
 
     .card-popular {
-        width: 275px;
-        height: 355px;
+        width: 350px;
+    }
+
+    .buttons-popular img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* WIDTH 1180 px */
+@media (max-width: 1188px) {
+
+    #portada {
+        max-width: 1188px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tituloh2 {
+        font-size: 28px;
+    }
+
+    .slider-frame {
+        width: 900px;
+        gap: 60px;
+    }
+
+    .slider-img {
+        width: 850px;
+        height: 500px;
+        padding: 0 50px 50px;
+    }
+
+    .slider-frame ul {
+        position: relative;
+        left: 50px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        position: relative;
+        right: 25px;
+        top: -13px;
+        margin: 0;
+    }
+
+    .barra-busqueda {
+        position: absolute;
+        left: 35%;
+        width: 350px;
+    }
+
+    #cards {
+        padding: 5px;
+        max-width: 1188px;
+    }
+
+    .card {
+        width: 210px;
+        height: 220px;
+    }
+
+    .productos-conteiner {
+        gap: 10px;
+    }
+
+    #nosotros {
+        max-width: 1188px;
+        padding: 10px;
+    }
+
+    #contacto {
+        max-width: 1188px;
+        padding: 10px;
+    }
+
+    .contactanos {
+        max-width: 1188px;
+    }
+
+    .phone-mail {
+        width: 700px;
+    }
+
+    .proveedores {
+        max-width: 1188px;
+        gap: 60px;
+    }
+
+    footer {
+        max-width: 1188px;
     }
 }
 
@@ -73,19 +180,65 @@
 @media (max-width: 992px) {
 
     /* Header */
+
+    header {
+        max-width: 992px;
+    }
+
     .menu-label {
         display: block;
+        position: absolute;
+        top: 35px;
+        order: 2;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .logo-navbar {
+        display: block;
+        width: 70px;
+        height: 70px;
+    }
+
+    .navbar {
+        position: absolute;
+        right: 76%;
     }
 
     .navbar-list {
-        flex-direction: column;
         position: absolute;
-        top: 80px;
-        right: 60px;
-        left: 5px;
-        gap: 35px;
+        height: 350px;
+        width: 768px;
+        top: 85px;
+        left: 65%;
+        flex-direction: column;
+        gap: 30px;
         background: linear-gradient(to top, var(--secondary), var(--button), #ffffff);
-        padding: 10px 200px;
         z-index: 2;
+        display: none;
+    }
+
+    #menu-toggle:checked+.navbar-list {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+
+    .barra-busqueda {
+        position: relative;
+        top: 0px;
+        left: 130%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .zona-derecha {
+        position: absolute;
+        top: 0px;
     }
 }
