@@ -78,7 +78,7 @@
     }
 
     .card-popular {
-        width: 350px;
+        width: 300px;
     }
 
     .buttons-popular img {
@@ -87,7 +87,7 @@
     }
 }
 
-/* WIDTH 1180 px */
+/* WIDTH 1188 px */
 @media (max-width: 1188px) {
 
     #portada {
@@ -123,21 +123,21 @@
         gap: 25px;
         position: relative;
         right: 25px;
-        left: 20px;
+        left: 7%;
         top: -13px;
         margin: 0;
         width: 500px;
     }
 
-    .navbar-list{
-        left: 60px;
-        top: 5px;
+    .navbar-list {
+        left: 15px;
+        top: 6px;
     }
 
     .barra-busqueda {
         position: absolute;
-        left: 25%;
-        width: 350px;
+        left: 30%;
+        width: 300px;
     }
 
     #cards {
@@ -195,12 +195,12 @@
     .menu-label {
         display: block;
         position: absolute;
-        top: 35px;
+        top: 30px;
         left: 10px;
         order: 2;
         z-index: 2;
         cursor: pointer;
-        
+
     }
 
     .logo-navbar {
@@ -210,21 +210,28 @@
     }
 
     .navbar {
-        position: absolute;
-        right: 20%;
+        position: relative;
+        width: 100%;
+        left: 0;
+        right: 0;
     }
 
     .navbar-list {
         position: absolute;
         height: 350px;
-        width: 768px;
+        min-width: 500px;
         top: 85px;
-        left: 20%;
+        left: 3%;
+        right: 3%;
         flex-direction: column;
         gap: 30px;
         background: linear-gradient(to top, var(--secondary), var(--button), #ffffff);
         z-index: 2;
         display: none;
+        border-radius: 15px;
+        border: 1px solid var(--secondary);
+        border-top: none;
+        box-shadow: 2px 2px 8px #7d7d7d;
     }
 
     #menu-toggle:checked+.navbar-list {
@@ -232,9 +239,8 @@
     }
 
     .barra-busqueda {
-        position: relative;
-        top: 0px;
-        left: 49%;
+        position: absolute;
+        top: 30px;
     }
 
     .logo {
@@ -242,7 +248,89 @@
     }
 
     .zona-derecha {
+        flex-direction: column;
         position: absolute;
-        top: 0px;
+        top: 45%;
+        left: 75%;
+    }
+
+    .login {
+        gap: 5px;
+    }
+
+    .cart-icon {
+        position: absolute;
+        top: -25px;
+        left: 38%;
+        width: 25px;
+        height: 15px;
+    }
+
+    .envio {
+        display: none;
+    }
+
+    .slider-img {
+        width: 700px;
+        height: 400px;
+    }
+
+    .slider-frame {
+        width: 760px;
+    }
+
+    .info-conteiner {
+        max-width: 992px;
+    }
+
+    .productos-conteiner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+       align-items: center;
+        gap: 60px;
+    }
+
+    .info-item,
+    .info-personal {
+        width: 80%;
+    }
+
+    .personal {
+        width: 500px;
+        gap: 15px;
+    }
+
+    .personal-item {
+        width: 100px;
+    }
+
+    .personal-item{
+        padding: 0px 10px 10px 10px;
+    }
+
+.foto-carnet {
+    width: 80px;
+    height: 70px;
+}
+
+.phone-mail {
+    width: 600px;
+}
+
+.contactanos {
+    max-width: 992px;
+}
+
+.item {
+    font-size: 16px;
+    width: 300px;
+}
+
+    #nosotros {
+        max-width: 992px;
+    }
+
+    .textarea {
+        width: 90%;
     }
 }

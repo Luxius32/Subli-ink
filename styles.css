@@ -89,6 +89,8 @@ header a {
 .navbar {
     gap: 80px;
     position: relative;
+    width: 850px;
+    left: 40px;
 }
 
 .logo-navbar {
@@ -116,6 +118,7 @@ header a {
     position: relative;
     bottom: 3px;
     right: 15px;
+    z-index: 2;
 }
 
 .login {
@@ -141,7 +144,7 @@ header a {
     border: 1px solid var(--secondary);
     position: absolute;
     top: 20px;
-    right: 52%;
+    right: 58%;
     top: 15px;
     width: 300px;
     padding: 3px;
@@ -613,7 +616,7 @@ form,
 
 #sumate {
     padding: 50px 30px;
-    margin: 500px 50px 150px;
+    margin: 300px 50px 150px;
     gap: 20px;
     font-family: "Architects Daughter";
     border: 1px solid #7d7d7d;
