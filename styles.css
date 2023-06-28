@@ -132,6 +132,10 @@ header a {
     width: 90px;
 }
 
+.login hr {
+    display: none;
+}
+
 .cart-icon {
     width: 30px;
     height: 20px;

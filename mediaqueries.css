@@ -136,7 +136,7 @@
 
     .barra-busqueda {
         position: absolute;
-        left: 30%;
+        left: 22%;
         width: 300px;
     }
 
@@ -150,8 +150,17 @@
         height: 220px;
     }
 
+    .card-popular {
+        width: 270px;
+        height: 320px;
+    }
+
+    .card-popular-info {
+        gap: 2px;
+    }
+
     .productos-conteiner {
-        gap: 10px;
+        gap: 30px;
     }
 
     #nosotros {
@@ -241,6 +250,7 @@
     .barra-busqueda {
         position: absolute;
         top: 30px;
+        left: 30%;
     }
 
     .logo {
@@ -248,20 +258,29 @@
     }
 
     .zona-derecha {
-        flex-direction: column;
         position: absolute;
-        top: 45%;
-        left: 75%;
+        top: -5%;
+        left: 82%;
     }
 
     .login {
-        gap: 5px;
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .login p {
+        display: none;
+    }
+
+    .login hr {
+        display: block;
+        width: 80%;
+        border: 1px solid #151515;
     }
 
     .cart-icon {
         position: absolute;
-        top: -25px;
-        left: 38%;
+        left: 80%;
         width: 25px;
         height: 15px;
     }
@@ -279,15 +298,20 @@
         width: 760px;
     }
 
+    .slider2-info {
+        left: 55%;
+    }
+
+    .tituloh2 {
+        font-size: 21px;
+    }
+
     .info-conteiner {
         max-width: 992px;
     }
 
     .productos-conteiner {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-       align-items: center;
-        gap: 60px;
+        gap: 30px;
     }
 
     .info-item,
@@ -297,34 +321,34 @@
 
     .personal {
         width: 500px;
-        gap: 15px;
+        gap: 20px;
     }
 
     .personal-item {
         width: 100px;
     }
 
-    .personal-item{
+    .personal-item {
         padding: 0px 10px 10px 10px;
     }
 
-.foto-carnet {
-    width: 80px;
-    height: 70px;
-}
+    .foto-carnet {
+        width: 80px;
+        height: 70px;
+    }
 
-.phone-mail {
-    width: 600px;
-}
+    .phone-mail {
+        width: 600px;
+    }
 
-.contactanos {
-    max-width: 992px;
-}
+    .contactanos {
+        max-width: 992px;
+    }
 
-.item {
-    font-size: 16px;
-    width: 300px;
-}
+    .item {
+        font-size: 16px;
+        width: 300px;
+    }
 
     #nosotros {
         max-width: 992px;
@@ -332,5 +356,183 @@
 
     .textarea {
         width: 90%;
+    }
+
+    #cards {
+        margin: 250px 3px;
+    }
+
+    .card {
+        width: 200px;
+        height: 190px;
+        gap: ;
+    }
+
+    .card-img {
+        width: 170px;
+        height: 150px;
+    }
+
+    .card span {
+        font-size: 16px;
+
+    }
+}
+
+/* WIDTH 768px */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        width: 100%;
+    }
+
+    .barra-busqueda {
+        width: 225px;
+    }
+
+    .zona-derecha {
+        left: 79%;
+    }
+
+    .login {
+        font-size: 10px;
+    }
+
+    #portada {
+        max-width: 768px;
+    }
+
+    .slider-frame {
+        width: 570px;
+        gap: 90px;
+    }
+
+    .slider-img {
+        width: 520px;
+        height: 300px;
+        padding: 0 50px 50px;
+    }
+
+    .tituloh2 {
+        font-size: 18px;
+    }
+.slider1 {
+    left: -1%;
+}
+    .slider2 {
+        left: -1%;
+    }
+
+    .slider-info2 {
+        left: 57%;
+    }
+
+    .slider2-info h2 {
+        width: 218px;
+    }
+
+    .slider3-info {
+        left: 8%;
+    }
+
+    #cards {
+        max-width: 768px;
+    }
+
+    .cards-conteiner {
+        max-width: 768px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .productos-conteiner {
+        max-width: 768px;
+    }
+
+    .card {
+        width: 160px;
+        height: 180px;
+        gap: 5px;
+    }
+
+    .card-img {
+        width: 140px;
+        height: 110px;
+    }
+
+    .cards-subconteiner {
+        gap: 20px;
+    }
+
+    .card-popular {
+        width: 230px;
+        height: 280px;
+    }
+
+    .card-popular h3 {
+        font-size: 14px;
+    }
+
+    .buttons-popular img {
+        width: 14px;
+        height: 14px;
+    }
+
+    #nosotros {
+        max-width: 768px;
+    }
+
+    #nosotros h3 {
+        font-size: 16px;
+    }
+
+    .info-conteiner {
+        max-width: 768px;
+    }
+
+    .info-item {
+        height: 330px;
+    }
+
+    .info-item p {
+        font-size: 12px;
+    }
+
+    .info-personal {
+        height: 400px;
+    }
+
+    .personal {
+        flex-wrap: wrap;
+    }
+
+    .personal-item{
+        gap: 1px;
+    }
+
+    .contactanos {
+        max-width: 768px;
+    }
+
+    #contacto h2 {
+        font-size: 18px;
+    }
+
+    #contacto h3 {
+        font-size: 16px;
+    }
+    .phone-mail {
+        width: 450px;
+        flex-direction: column;
+    }
+
+    .proveedores {
+        width: 450px;
+    }
+
+    .proveedores img {
+        width: 150px;
+        height: 75px;
     }
 }
