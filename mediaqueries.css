@@ -1000,6 +1000,10 @@
     }
     
     .recu-conteiner p {
-        font-size: 10px;
+        font-size: 12px;
+    }
+
+    .recu-conteiner {
+        font-size: 12px;
     }
 }
