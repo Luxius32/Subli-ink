@@ -877,6 +877,11 @@
 /* WIDH 576px */
 
 @media (max-width: 576px) {
+    #formulario {
+        padding: 5px;
+        margin: 20px 5px 150px
+    }
+
     .conteiner {
         max-width: 500px;
     }
@@ -904,5 +909,97 @@
 
     h1 {
         font-size: 18px;
+    }
+}
+
+/* FORM 1 INICIAR SESION */
+
+/* WIDTH 835px */
+
+@media (max-width: 835px) {
+
+    #login-form {
+        font-size: 14px;
+    }
+
+    .login-item {
+        flex-direction: column;
+    }
+
+    .login-item:last-child {
+        gap: 4px;
+    }
+
+    #login-form input {
+        width: 300px;
+    }
+
+    #formulario a {
+        font-size: 12px;
+    }
+
+    #formulario h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px){
+    #login-form {
+        font-size: 12px;
+    }
+
+    #formulario h1 {
+        font-size: 18px;
+    }
+
+    #login-form input {
+        width: 250px;
+    }
+
+    #formulario a {
+        font-size: 10px;
+    }
+}
+
+/* OLVIDE MI CONTRASEÑA */
+
+@media (max-width: 992px){
+        .recu-conteiner {
+            max-width: 600px;
+            font-size: 14px;
+            text-align: center;
+        }
+    
+        .input input {
+            width: 440px;
+        }
+    
+        h1 {
+            font-size: 28px;
+        }
+}
+
+@media (max-width: 768px){
+    .input input {
+        width: 380px;
+    }
+
+    .recu-conteiner {
+        width: 85%;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .input input {
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+    
+    .recu-conteiner p {
+        font-size: 10px;
     }
 }

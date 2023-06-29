@@ -8,57 +8,60 @@
     <link rel="shorcut icon" href="/Assets/Iconos/Taza.png">
     <link rel="stylesheet" href="/contraseña.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
 <body>
     <header>
+
         <!-- Logo -->
-        <img src="/Assets/Iconos/Logo2.png" alt="logo" class="logo"> <!-- Enviar a -->
+        <div class="logo">
+            <img src="/Assets/Iconos/Logo2.png" alt="logo">
+        </div>
+
+        <!-- Enviar a -->
         <div class="envio">
             <img src="/Assets/Iconos/Ubicacion.png" alt="">
             <a href="#portada">Enviar a Calle Falsa 123</a>
         </div>
 
-        <!-- Navbar y barra de busqueda -->
+
+        <!-- Navbar -->
         <nav class="navbar">
 
+            <!-- Barra de busqueda -->
+            <label for="barra-busqueda" class="search"></label>
+            <input type="text" id="barra-busqueda" class="barra-busqueda" placeholder="Busca tu diseño">
+
             <!-- menu hamburguesa -->
+
             <label for="menu-toggle" class="menu-label">
                 <img src="/Assets/Iconos/menu.png" alt="menu" class="menu-icon">
             </label>
             <input type="checkbox" id="menu-toggle" class="menu-label">
-            <div class="header-mid">
 
-                <!-- Barra de busqueda -->
-                <label for="barra-busqueda" class="search"></label>
-                <input type="text" id="barra-busqueda" class="barra-busqueda" placeholder="Busca tu diseño">
-
-                <!-- navbar list -->
-                <ul class="navbar-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">Productos</a></li>
-                    <li><a href="index.html">Nosotros</a></li>
-                    <li><a href="index.html">Contacto</a></li>
-                    <li><a href="index.html">Sumate</a></li>
-                </ul>
-            </div>
-
-            <!-- Login y carrito -->
-            <div class="zona-derecha">
-                <!-- Ingreso a la pagina -->
-                <div class="account">
-                    <!-- <a href="#">Mis compras</a> -->
-                    <div class="login">
-                        <a href="form2.html">Crea tu cuenta</a>
-                        <p>|</p>
-                        <a href="form.html">Inicia sesión</a>
-                    </div>
-                </div>
-
-                <!-- Carrito -->
-                <img src="/Assets/Iconos/carrito.png" alt="cart-icon" class="cart-icon">
-            </div>
+            <!-- navbar list -->
+            <ul class="navbar-list">
+                <li><a href="#portada">Home</a></li>
+                <li><a href="#cards">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#sumate">Sumate</a></li>
+                <li><img src="/Assets/Iconos/Logo2.png" alt="logo" class="logo-navbar"></li>
+            </ul>
         </nav>
+
+        <div class="zona-derecha">
+            <!-- Ingreso a la pagina -->
+            <div class="login">
+                <a href="form2.html">Crea tu cuenta</a>
+                <p>|</p>
+                <a href="form.html">Inicia sesión</a>
+            </div>
+
+            <!-- Carrito -->
+            <img src="/Assets/Iconos/carrito.png" alt="cart-icon" class="cart-icon">
+        </div>
     </header>
 
     <main>
