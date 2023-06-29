@@ -739,8 +739,8 @@
     }
 
     .info-item {
-        width: 70%;
-        height: 340px;
+        width: 95%;
+        height: 270px;
     }
 
     #contacto {
@@ -752,13 +752,13 @@
     }
 
     .info-personal {
-        width: 70%;
+        width: 95%;
     }
 
     .personal {
         gap: 7px;
         padding: 30px 90px;
-        width: 360px;
+        width: 380px;
     }
 
     .personal-item {
@@ -776,7 +776,7 @@
     }
 
     .contactanos-conteiner {
-        width: 70%;
+        width: 95%;
     }
 
     .contactanos {
@@ -785,7 +785,7 @@
 
     #sumate {
         max-width: 576px;
-        width: 70%;
+        width: 95%;
     }
 
     .proveedores {
