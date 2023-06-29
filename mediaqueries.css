@@ -555,6 +555,7 @@
 
     #portada {
         max-width: 576px;
+        margin-top: 150px;
     }
 
     .slider-frame {
