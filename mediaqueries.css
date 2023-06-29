@@ -557,12 +557,12 @@
     }
 
     .slider-frame {
-        width: 300px;
+        width: 380px;
     }
 
     .slider-img {
-        width: 350px;
-        height: 190px;
+        width: 370px;
+        height: 260px;
         padding: 0 10px 50px;
     }
 
@@ -585,11 +585,11 @@
     }
 
     .slider1 {
-        left: -5%;
+        left: -4%;
     }
 
     .slider2 {
-        left: -5%;
+        left: -3%;
     }
 
     .slider2-info {
@@ -614,7 +614,7 @@
 
     .slider3 {
         position: relative;
-        left: -5%;
+        left: -4%;
     }
 
     .slider3 h2 {
@@ -630,7 +630,7 @@
     .slider3-info {
         gap: 0;
         right: 40%;
-        top: 15px;
+        top: 53px;
     }
 
     .card {
@@ -661,6 +661,13 @@
         gap: 10px;
     }
 
+    .productos h2 {
+        font-size: 18px;
+    }
+
+    #mas-vendidos h2 {
+        font-size: 18px;
+    }
     .productos-conteiner {
         max-width: 576px;
         gap: 15px;
@@ -708,6 +715,10 @@
         margin-right: 8px;
     }
 
+    #nosotros h2 {
+        font-size: 18px;
+    }
+    
     #nosotros h3 {
         font-size: 12px;
     }
