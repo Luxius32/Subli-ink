@@ -862,6 +862,8 @@
     }
 }
 
+/* WIDTH 768px */
+
 @media (max-width: 768px) {
     .conteiner {
         max-width: 600px;
@@ -872,9 +874,11 @@
     }
 }
 
+/* WIDH 576px */
+
 @media (max-width: 576px) {
     .conteiner {
-        max-width: 400px;
+        max-width: 500px;
     }
 
     .form-registro input {
