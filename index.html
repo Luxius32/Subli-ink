@@ -50,6 +50,8 @@
                 <li><a href="#sumate">Sumate</a></li>
                 <li><img src="/Assets/Iconos/Logo2.png" alt="logo" class="logo-navbar"></li>
             </ul>
+
+            <div class="overlay"></div>
         </nav>
 
         <div class="zona-derecha">
@@ -60,8 +62,68 @@
                 <a href="form.html">Inicia sesión</a>
             </div>
 
+            <label for="cart-toggle" class="cart-label">
+                <img src="/Assets/Iconos/carrito.png" alt="carrito" class="cart-icon">
+            </label>
+            <input type="checkbox" id="cart-toggle">
+
             <!-- Carrito -->
-            <img src="/Assets/Iconos/carrito.png" alt="cart-icon" class="cart-icon">
+            <div class="cart">
+                <h2>Tus Productos</h2>
+
+                <div class="cart-item">
+                    <div class="item-info">
+                        <img src="/Assets/Productos mas vendidos/Taza1.png" alt="NFT del carrito">
+                        <h3 class="item-title">Taza Mario Bros psicodélica</h3>
+                        <p class="item-bid">Precio actual</p>
+                        <span class="item-price">$ 1500</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-info">
+                        <img src="/Assets/Productos mas vendidos/Botella.png" alt="NFT del carrito">
+                        <h3 class="item-title">Botella hoppy Pokemón</h3>
+                        <p class="item-bid">Precio actual</p>
+                        <span class="item-price">$ 2200</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-info">
+                        <img src="/Assets/Productos mas vendidos/Mate.png" alt="NFT del carrito">
+                        <h3 class="item-title">Mate Grey´s Anatomy</h3>
+                        <p class="item-bid">Precio actual</p>
+                        <span class="item-price">$ 1500</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down">-</span>
+                        <span class="item-quantity">1</span>
+                        <span class="quantity-handler up">+</span>
+                    </div>
+
+                </div>
+
+                <span class="divider"></span>
+
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span>$ 4200</span>
+                </div>
+                <button class="buttons">Comprar</button>
+            </div>
+
+            <!-- <img src="/Assets/Iconos/carrito.png" alt="cart-icon" class="cart-icon"> -->
         </div>
     </header>
 

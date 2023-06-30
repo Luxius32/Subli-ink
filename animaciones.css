@@ -1,4 +1,118 @@
+:root {
+    --primary: #eb7072;
+    --secondary: #f5ba90;
+    --button: #f5e2b8;
+    --font: #151515;
+    --font2: #dadada;
+    --various: #a2caa5;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 40px;
 }
+
+@keyframes slide {
+    0% {
+        margin-left: 0%;
+    }
+
+    30% {
+        margin-left: 0%;
+    }
+
+    35% {
+        margin-left: -100%;
+    }
+
+    65% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
+}
+
+.slider-frame ul {
+    animation: slide 12s infinite alternate ease-out;
+}
+
+.navbar-list li {
+    position: relative;
+}
+
+.navbar-list li::after {
+    content: "";
+    height: 2px;
+    width: 0%;
+    background: linear-gradient(to top, var(--font2), var(--font));
+    position: absolute;
+    left: 0;
+    bottom: 1%;
+    transition: 0.15s ease-out;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.navbar-list li:hover::after {
+    width: 100%;
+    transform-origin: bottom left;
+    transform: scaleX(1);
+}
+
+.info-item {
+    opacity: 0;
+    animation: fade-in 0.5s ease-in-out forwards;
+}
+
+.info-personal {
+    opacity: 0;
+    animation: fade-in 0.5s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(20px);
+    }
+}
+
+.info-conteiner:nth-child(1){
+    animation-delay: 0s;
+}
+
+.info-conteiner:nth-child(2){
+    animation-delay: 0.2s;
+}
+
+.info-conteiner:nth-child(3){
+    animation-delay: 0.4s;
+}
+
+.info-conteiner:nth-child(4){
+    -webkit-animation-delay: 0.6s;
+}
+
+.quantity-handler:hover {
+    cursor: pointer;
+    background-color: var(--button);
+}
+
+.buttons:hover {
+    background: var(--button);
+}
+
+.buttons-popular:hover {
+    background:var(--button);
+}
+

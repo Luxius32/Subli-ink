@@ -98,7 +98,8 @@ header a {
 }
 
 .menu-label,
-#menu-toggle {
+#menu-toggle,
+#cart-toggle {
     display: none;
 }
 
@@ -141,6 +142,7 @@ header a {
     height: 20px;
     position: absolute;
     left: 90%;
+    top: 38%;
 }
 
 .barra-busqueda {
@@ -154,12 +156,130 @@ header a {
     padding: 3px;
 }
 
+.cart {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    padding: 50px 30px;
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+    height: calc(100vh - 65px);
+    width: 400px;
+    overflow-y: scroll;
+    z-index: 2;
+    background: linear-gradient(to top, var(--button), var(--secondary),white);
+    border-radius: 15px;
+    transform: translate(200%);
+    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+#cart-toggle:checked+.cart{
+    display: flex;
+    transform: translate(0%);
+    transition: all 0.5 cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+.cart::-webkit-scrollbar {
+    display: none;
+}
+
 ::placeholder {
     padding: 5px;
     color: #c5c5c5;
     font-style: italic;
     font-family: "Architects Daughter";
 }
+
+.cart h2 {
+    color: var(--text-white);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    gap: 20px;
+    background-color: #2323234e;
+    padding: 20px;
+    border: 1px solid var(--electric);
+    border-radius: 10px;
+}
+
+.cart-item img {
+    height: 65px;
+    width: 65px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-title {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.item-bid {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.item-price {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.item-handler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    left: 230px;
+}
+
+.quantity-handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.up {
+    border: 1px solid var(--secondary);
+}
+
+.down {
+    border: 1px solid var(--secondary);
+}
+
+.divider {
+    margin-top: 20px;
+    border: 0.5px solid var(--secondary);
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.cart-total p {
+    font-weight: 700;
+}
+
+.cart-total span {
+    font-weight: 400;
+    font-size: 18px;
+}
+
 
 /* HEADER */
 
@@ -195,8 +315,6 @@ body {
     display: flex;
     padding: 0;
     width: 300%;
-    animation: slide 12s infinite alternate ease-out;
-
 }
 
 .slider-frame li {
@@ -209,32 +327,6 @@ body {
     width: 1300px;
     height: 600px;
     padding: 0 50px 100px;
-}
-
-@keyframes slide {
-    0% {
-        margin-left: 0%;
-    }
-
-    30% {
-        margin-left: 0%;
-    }
-
-    35% {
-        margin-left: -100%;
-    }
-
-    65% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: -200%;
-    }
 }
 
 /* Slider 1 */
