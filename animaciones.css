@@ -65,44 +65,6 @@ html {
     transform: scaleX(1);
 }
 
-.info-item {
-    opacity: 0;
-    animation: fade-in 0.5s ease-in-out forwards;
-}
-
-.info-personal {
-    opacity: 0;
-    animation: fade-in 0.5s ease-in-out forwards;
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-        transform: translateX(0);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(20px);
-    }
-}
-
-.info-conteiner:nth-child(1){
-    animation-delay: 0s;
-}
-
-.info-conteiner:nth-child(2){
-    animation-delay: 0.2s;
-}
-
-.info-conteiner:nth-child(3){
-    animation-delay: 0.4s;
-}
-
-.info-conteiner:nth-child(4){
-    -webkit-animation-delay: 0.6s;
-}
-
 .quantity-handler:hover {
     cursor: pointer;
     background-color: var(--button);
@@ -113,6 +75,31 @@ html {
 }
 
 .buttons-popular:hover {
-    background:var(--button);
+    background: var(--button);
 }
 
+
+/* GLASSMORPHISMO */
+.overlay {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: 800vh;
+    width: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: none;
+}
+
+/* Toggle para el glass */
+
+#menu-toggle:checked~.overlay {
+    display: block;
+}
+
+#cart-toggle:checked~.overlay {
+    display: block;
+}

@@ -663,7 +663,7 @@
     }
 
     .cards-subconteiner {
-        gap: 10px;
+        gap: 20px;
     }
 
     .productos h2 {
@@ -685,10 +685,11 @@
     }
 
     .card-popular {
-        width: 160px;
+        width: 175px;
         height: 260px;
         padding: 1px;
         text-align: center;
+        position: relative;
     }
 
     .card-popular h3 {
@@ -697,10 +698,14 @@
 
     .card-popular p {
         font-size: 12px;
+        position: absolute;
+        bottom: 30%;
     }
 
     .card-popular span {
         font-size: 12px;
+        position: absolute;
+        bottom: 40%;
     }
 
     .card-popular-info {
@@ -710,9 +715,11 @@
 
     .buttons-popular {
         font-size: 12px;
-        padding: 2px;
+        padding: 5px;
         margin: 10px;
         gap: 0px;
+        position: absolute;
+        bottom: 15px;
     }
 
     .buttons-popular img {
