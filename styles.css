@@ -170,15 +170,8 @@ header a {
     z-index: 2;
     background: linear-gradient(to top, var(--button), var(--secondary),white);
     border-radius: 15px;
-    transform: translate(200%);
-    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
 }
 
-#cart-toggle:checked+.cart{
-    display: flex;
-    transform: translate(0%);
-    transition: all 0.5 cubic-bezier(0.92, 0.01, 0.35, 0.99);
-}
 
 .cart::-webkit-scrollbar {
     display: none;
