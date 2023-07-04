@@ -168,10 +168,9 @@ header a {
     width: 400px;
     overflow-y: scroll;
     z-index: 2;
-    background: linear-gradient(to top, var(--button), var(--secondary),white);
+    background: linear-gradient(to top, var(--button), var(--secondary), white);
     border-radius: 15px;
 }
-
 
 .cart::-webkit-scrollbar {
     display: none;
@@ -280,6 +279,7 @@ header a {
 body {
     background-image: url(/Assets/Imagenes/body2.jpg);
     font-family: "Architects Daughter";
+    overflow: hidden;
 }
 
 #portada {

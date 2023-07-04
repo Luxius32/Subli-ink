@@ -954,7 +954,7 @@
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
     #login-form {
         font-size: 12px;
     }
@@ -974,23 +974,23 @@
 
 /* OLVIDE MI CONTRASEÑA */
 
-@media (max-width: 992px){
-        .recu-conteiner {
-            max-width: 600px;
-            font-size: 14px;
-            text-align: center;
-        }
-    
-        .input input {
-            width: 440px;
-        }
-    
-        h1 {
-            font-size: 28px;
-        }
+@media (max-width: 992px) {
+    .recu-conteiner {
+        max-width: 600px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .input input {
+        width: 440px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .input input {
         width: 380px;
     }
@@ -1009,7 +1009,7 @@
     h1 {
         font-size: 18px;
     }
-    
+
     .recu-conteiner p {
         font-size: 12px;
     }
